@@ -105,7 +105,7 @@ func TestTuiEmpty(t *testing.T) {
 
 	s := state.State{
 		WindowStates: map[int]*state.WindowState{
-			0: &state.WindowState{
+			0: {
 				Name:   "",
 				Width:  16,
 				Offset: 0,
@@ -156,7 +156,7 @@ func TestTuiScrollBar(t *testing.T) {
 
 	s := state.State{
 		WindowStates: map[int]*state.WindowState{
-			0: &state.WindowState{
+			0: {
 				Name:   "",
 				Width:  16,
 				Offset: 0,
@@ -207,7 +207,7 @@ func TestTuiHorizontalSplit(t *testing.T) {
 
 	s := state.State{
 		WindowStates: map[int]*state.WindowState{
-			0: &state.WindowState{
+			0: {
 				Name:   "test0",
 				Width:  16,
 				Offset: 0,
@@ -217,7 +217,7 @@ func TestTuiHorizontalSplit(t *testing.T) {
 				Length: 600,
 				Mode:   mode.Normal,
 			},
-			1: &state.WindowState{
+			1: {
 				Name:   "test1",
 				Width:  16,
 				Offset: 0,
@@ -269,7 +269,7 @@ func TestTuiVerticalSplit(t *testing.T) {
 
 	s := state.State{
 		WindowStates: map[int]*state.WindowState{
-			0: &state.WindowState{
+			0: {
 				Name:   "test0",
 				Width:  8,
 				Offset: 0,
@@ -279,7 +279,7 @@ func TestTuiVerticalSplit(t *testing.T) {
 				Length: 600,
 				Mode:   mode.Normal,
 			},
-			1: &state.WindowState{
+			1: {
 				Name:   "test1",
 				Width:  8,
 				Offset: 0,
